@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Q2{
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        System.out.print("Enter Radius of Circle: ");
+        double R = read.nextDouble();
+        double cf = 2 * Math.PI * R;
+        double area = Math.PI * Math.pow(R, 2);
+        System.out.println("The circumference of circle is: " + cf);
+        System.out.println("Area of circle is: " + area);
+        read.close();
+    }
+}
