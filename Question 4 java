@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Q4{
+    public static void main(String[] args)
+        {
+        Scanner read=new Scanner(System.in);
+        double dsp, dis, sp;
+        System.out.print("Enter discounted price: ");
+        dsp = read.nextDouble();
+        if (dsp > 0) {
+            System.out.print("Enter discount percentage: ");
+            dis = read.nextDouble();
+            if (dis >= 0 && dis < 100) {
+                sp = dsp / (1 - dis / 100.0);
+                System.out.println("The original price is: " +sp);
+            } else if (dis == 100) 
+                System.out.println("Discount should not be 100%.INVALID");
+         else 
+                System.out.println("Discount percentage must be between 0 and 100.");
+        }else 
+            System.out.println("The price must be a positive number");
+        read.close();
+    }
+}
