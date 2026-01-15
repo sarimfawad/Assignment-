@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Q7 {
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        int num;
+        System.out.print("Enter any number: ");
+        num= read.nextInt();
+        if(num%2==0)
+            System.out.print("Entered number is EVEN");
+        else
+            System.out.print("Entered number is ODD");
+        read.close();
+    }
+}
