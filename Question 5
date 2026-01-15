@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Q5 {
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        double I,V,P;
+        System.out.print("Enter the value of Current: ");
+        I= read.nextDouble();
+        System.out.print("Enter the value of Voltage: ");
+        V = read.nextDouble();
+        P= I*V;
+        System.out.println("Power is " +P +" watt");
+        read.close();
+    }
+}
