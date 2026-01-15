@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Q6 {
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        int a,b,h;
+        System.out.print("Enter 1st parallel line length: ");
+        a= read.nextInt();
+        System.out.print("Enter 2nd parallel line length: ");
+        b = read.nextInt();
+        System.out.print("Enter height of trapezium: ");
+        h = read.nextInt();
+        double area= h*(a+b)/2;
+        System.out.println("The area of trapezium is " +area +" cm");
+        read.close();
+    }
+}
