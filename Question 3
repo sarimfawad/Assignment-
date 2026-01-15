@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Q3{
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        int sp, dis;
+        double dis_am, dsp;
+        System.out.print("Enter Current selling price: ");
+        sp = read.nextInt();
+        
+        if (sp > 0) {
+            System.out.print("Enter discount percentage: ");
+            dis = read.nextInt();
+            dis_am = sp * (dis / 100.0);
+            dsp = sp - dis_am;
+            System.out.print("The discounted price is: " + dsp);
+        } else {
+            System.out.print("The price must be in positive number");
+        }
+        read.close();
+    }
+}
