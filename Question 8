@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Q8 {
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        int a,b,c,s;
+        System.out.print("Enter 1st side of triangle: ");
+        a= read.nextInt();
+        System.out.print("Enter 2nd side of triangle: ");
+        b= read.nextInt();
+        System.out.print("Enter 3rd side of triangle: ");
+        c= read.nextInt();
+        s=(a+b+c)/2;
+        double area=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+        System.out.print("The area of triangle by using Hero's formula is "+area +" cm");
+        read.close();
+    }
+}
